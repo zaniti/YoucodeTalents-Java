@@ -171,7 +171,7 @@ public void SendMail(String server,String port,String username,String password,S
 		String subject,String msg) throws AddressException, MessagingException {
 	Properties prop = new Properties();
 	prop.put("mail.smtp.auth", true);
-	prop.put("mail.smtp.starttls.enable", "true");
+	prop.put("mail.smtp.ssl.enable", "true");
 	prop.put("mail.smtp.host", server);
 	prop.put("mail.smtp.port", port);
 	
